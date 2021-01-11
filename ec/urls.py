@@ -19,4 +19,5 @@ from django.urls import path, include
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('', include('home.urls')), # this will render home page.
+    path('about/', include('about.urls')), # this will render about page.
 ]
