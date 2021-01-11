@@ -1,0 +1,19 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block title %}
+<title>EC About App</title>
+{% endblock title %}
+
+{% block content %}
+<div>
+    <span>
+        <p class="text-danger">
+            -> {{ txt }} </p>
+            this is rendered from python
+    </span>
+<br>
+    <a href="..">Return Home</a>
+</div>
+<script type="text/javascript" src="{% static 'scripts/about.js' %}"></script>
+{%endblock%}
