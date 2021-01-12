@@ -1,0 +1,9 @@
+{
+    "python.linting.enabled": true,
+    "python.linting.pylintEnabled": true,
+    "python.pythonPath": "/home/laxz/miniconda3/envs/dj-ec/bin/python",
+    "python.linting.pylintArgs": [
+        "--generate-members"
+    ],
+    "python.formatting.provider": "black"
+}
