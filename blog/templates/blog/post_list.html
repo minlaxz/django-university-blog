@@ -9,7 +9,7 @@
 {% block content %}
 <!-- As a heading -->
 <nav class="navbar navbar-light bg-light">
-    <span class="navbar-brand mb-0 h1" style="margin-left:3%">Latest Post: {{ posts.first }}</span>
+    <span class="navbar-brand mb-0 h1" style="margin-left:3%">Latest Post: {{ posts.first.title | slice:":20" }}...</span>
 </nav>
 
 {% for post in posts %}
@@ -23,6 +23,12 @@
         </div>
         <div class="card-footer text-muted">
             Modified: {{ post.created_on }}
+            Categories:&nbsp;
+            {% for category in post.categories.all %}
+            <a href="{% url 'blog_category' category.name %}">
+                {{ category.name }}
+            </a>&nbsp;
+            {% endfor %}
         </div>
     </div>
     <hr class="my-4">

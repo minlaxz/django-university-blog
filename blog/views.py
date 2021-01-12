@@ -17,7 +17,19 @@ def blog_overview(request):
     return render(request, "blog/post_list.html", post_res)
 
 
-def post_detail(request, pk):
+def blog_detail(request, pk):
     post = get_object_or_404(Post, pk=pk)
     return render(request, 'blog/post_detail.html', {'post': post})
 
+
+def blog_category(request, category):
+    posts = Post.objects.filter(
+        categories__name__contains=category
+    ).order_by(
+        '-created_on'
+    )
+    context = {
+        "category": category,
+        "posts": posts
+    }
+    return render(request, "blog/post_category.html", context)
