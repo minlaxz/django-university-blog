@@ -4,3 +4,7 @@ from django.shortcuts import render
 
 def home_page(req):
     return render(req, 'home/index.html', {})
+
+
+def hidden_home(req):
+    return render(req, 'home/hidden_home.html', {})
