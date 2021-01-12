@@ -24,9 +24,9 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 SECRET_KEY = 'f993-q^j+s-g17gq(89xn7!63wfsna5zqdao_hf4y^sb2j0qpa'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = False
 
-ALLOWED_HOSTS = ['127.0.0.1', '4.tcp.ngrok.io']
+ALLOWED_HOSTS = ['127.0.0.1','0.tcp.ngrok.io', '1.tcp.ngrok.io', '2.tcp.ngrok.io', '3.tcp.ngrok.io', '4.tcp.ngrok.io']
 
 
 # Application definition
@@ -40,6 +40,7 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'home.apps.HomeConfig',
     'about.apps.AboutConfig',
+    'blog.apps.BlogConfig',
 ]
 
 MIDDLEWARE = [

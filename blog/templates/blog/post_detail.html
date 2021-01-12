@@ -1,0 +1,27 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block title %}
+<title>{{ post.title |slice:":15"}}...</title>
+{% endblock title %}
+
+{% block content %}
+<nav class="navbar navbar-light bg-light">
+    <span class="navbar-brand mb-0 h1" style="margin-left:3%">{{ post.title |slice:":15"}}...</span>
+</nav>
+<div class="container">
+    {% if post.published_date %}
+    <div class="text-secondary">
+        Published :{{ post.published_date }}
+    </div>
+    {% endif %}
+    <h2>{{ post.title }}</h2>
+    <p>{{ post.text|linebreaksbr }}</p>
+    <div class="text-secondary">
+        Modified: {{ post.created_on }}
+    </div>
+    <button class="btn btn-primary" onclick="twoStepBack()">Back</button>
+    <button class="btn btn-primary" onclick="detailToHome()">Return Home</button>
+</div>
+<script type="text/javascript" src="{% static 'scripts/blog.js' %}"></script>
+{% endblock %}

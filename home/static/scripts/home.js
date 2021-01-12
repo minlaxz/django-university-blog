@@ -4,10 +4,16 @@ document.getElementById('blog').addEventListener('click', blog )
 
 document.getElementById('about').addEventListener('click', about )
 
+document.getElementById('admin').addEventListener('click', admin )
+
 function blog() {
-    alert("Blog is under construct.")
+    window.location.href = 'blog'
 }
 
 function about() {
     window.location.href = 'about'
+}
+
+function admin() {
+    window.location.href = 'admin'
 }
