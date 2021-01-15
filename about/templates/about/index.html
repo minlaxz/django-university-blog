@@ -6,14 +6,31 @@
 {% endblock title %}
 
 {% block content %}
-<div>
-    <span>
-        <p class="text-danger">
-            -> {{ txt }} </p>
-            this is rendered from python
-    </span>
-<br>
-    <a href="..">Return Home</a>
+
+<div class="container" style="margin-top:2%">
+    <div class="card">
+        <div class="card-body">
+            <h2 class="card-title">History of TTU</h2>
+            <p class="card-text text-justify">
+                The university's origins trace to the Industrial Training Center, founded in March 1993. In November 1995, it became
+                a Government Technological Institute (GTI), offering two-year diplomas on vocational studies. In October 1999, the
+                school was "upgraded" to a Government Technological College (GTC), offering three-year Bachelor of Technology
+                (BTech) programs, and again in January 2007 to the Technological University level, offering bachelor's degree
+                programs in Engineering and Architecture and master's degree programs in Engineering.
+                It is part of a number of formerly two-year schools that have been promoted to university level in recent years. The
+                military government, which repeatedly closed down schools and universities in the 1990s, has pursued a policy of
+                dispersing students away from major city centers. The university's 125 hectare (310-acre) campus is outside
+                Thanlyin, and actually closer to a smaller town of Kyauktan Township.
+                In 2007, 461 students graduated with Bachelor of Engineering (BE) or Bachelor of Architecture (BArch) degrees.
+            </p>
+        </div>
+    </div>
 </div>
+
+<div class='text-center sticky-bottom' style="margin-top: 5%;">
+    <a class="btn btn-primary btn-sm" href="/">Back to Home</a>
+</div>
+
+
 <script type="text/javascript" src="{% static 'scripts/about.js' %}"></script>
 {%endblock%}

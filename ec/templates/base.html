@@ -17,6 +17,46 @@
 </head>
 
 <body>
+  <div class="row">
+    <nav class="navbar navbar-dark py-0 bg-primary navbar-expand-lg py-md-0">
+      <a class="navbar-brand" href="/#" style="margin-left: 2%; font-weight:bold;"> TTU EC Family</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+    
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item py-1">
+            <a class="nav-link" href="/about/">History of TTU</a>
+          </li>
+          <li class="nav-item py-1">
+            <a class="nav-link" href="/members/">Faculty Members</a>
+          </li>
+          <li class="nav-item py-1">
+            <a class="nav-link disabled" href="#">Laboratory</a>
+          </li>
+          <li class="nav-item py-1">
+            <a class="nav-link disabled" href="#">Curriculum</a>
+          </li>
+
+          <li class="nav-item dropdown py-1">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              Campus
+            </a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <a class="dropdown-item" href="/blog/">Announcements & Events</a>
+              <a class="dropdown-item" href="/blog/">Activities</a>
+              <a class="dropdown-item" href="/blog/">News</a>
+              <div class="dropdown-divider"></div>
+              <a class="dropdown-item text-warning" href="/admin/">For Admins</a>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </nav>
+  </div>
+
+
     {% block content %}
     {% endblock content%}
 

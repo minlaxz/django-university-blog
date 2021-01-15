@@ -21,4 +21,5 @@ urlpatterns = [
     path('', include('home.urls')), # this will route to home app url.
     path('about/', include('about.urls')), # this will render about page.
     path('blog/', include('blog.urls')), # this will render blog page.
+    path('members/', include('members.urls')), # this will render blog page.
 ]
