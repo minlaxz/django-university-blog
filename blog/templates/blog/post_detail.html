@@ -20,8 +20,10 @@
     <div class="text-secondary">
         Modified: {{ post.created_on }}
     </div>
-    <button class="btn btn-primary" onclick="twoStepBack()">Back</button>
-    <button class="btn btn-primary" onclick="detailToHome()">Return Home</button>
+    <a class="btn btn-primary btn-sm" href="../..">Back</a>
+    <div class='text-center sticky-bottom' style="margin-top: 5%;">
+        <a class="btn btn-primary btn-sm" href="/">Back to Home</a>
+    </div>
 </div>
-<script type="text/javascript" src="{% static 'scripts/blog.js' %}"></script>
+<!-- <script type="text/javascript" src="{% static 'scripts/blog.js' %}"></script> -->
 {% endblock %}

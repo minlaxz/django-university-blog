@@ -42,6 +42,7 @@ INSTALLED_APPS = [
     'about.apps.AboutConfig',
     'blog.apps.BlogConfig',
     'members.apps.MembersConfig',
+    'ecactivity.apps.EcactivityConfig',
 ]
 
 MIDDLEWARE = [

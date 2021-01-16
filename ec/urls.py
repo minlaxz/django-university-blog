@@ -22,4 +22,5 @@ urlpatterns = [
     path('about/', include('about.urls')), # this will render about page.
     path('blog/', include('blog.urls')), # this will render blog page.
     path('members/', include('members.urls')), # this will render blog page.
+    path('activity/', include('ecactivity.urls')), # this will render blog page.
 ]

@@ -19,7 +19,7 @@
         <div class="card-body">
             <h5 class="card-title">{{ post.title }}</h5>
             <p class="card-text">{{ post.text |slice:":45"| linebreaksbr }}... </p>
-            <h4><a href="{% url 'post_detail' pk=post.pk %}" class="btn btn-primary"> Details </a></h4>
+            <h4><a href="{% url 'post_detail' pk=post.pk %}" class="btn btn-primary btn-sm"> Details </a></h4>
         </div>
         <div class="card-footer text-muted">
             Modified: {{ post.created_on }}
@@ -35,6 +35,11 @@
 </div>
 
 {% endfor %}
-<button class="btn btn-primary" onclick="listToHome()" style="margin-left: 5%;">Return Home</button>
-<script type="text/javascript" src="{% static 'scripts/blog.js' %}"></script>
+
+
+<div class='text-center sticky-bottom' style="margin-top: 5%;">
+    <a class="btn btn-primary btn-sm" href="/">Back to Home</a>
+</div>
+
+<!-- <script type="text/javascript" src="{% static 'scripts/blog.js' %}"></script> -->
 {%endblock%}
