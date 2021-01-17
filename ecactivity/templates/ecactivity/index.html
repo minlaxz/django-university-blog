@@ -6,20 +6,129 @@
 {% endblock title %}
 
 {% block content %}
+<style>
+    @media screen and (max-width: 1024px) {
+        img.c_responsive {
+            width: 45%;
+            ;
+        }
+    }
+
+    @media screen and (min-width:1025px) and (max-width: 1280px) {
+        img.c_responsive {
+            width: 20%;
+        }
+    }
+
+    @media screen and (min-width: 1081px) {
+        img.c_responsive {
+            width: 30%;
+        }
+    }
+
+    img.c_responsive {
+        height: auto;
+    }
+
+    .foot-font {
+        font-family: 'Lobster Two', cursive;
+    }
+</style>
+
 
 <div class="container" style="margin-top:2%">
-    <div class="card">
+    <h3>Activities of EC Family</h3>
+
+    <div class="card" style="margin-top:3%">
         <div class="card-body">
-            <h2 class="card-title">Activities of EC Family</h2>
-            <p class="card-text text-justify">
-                Activity will goes here.
+            <!-- <h5 class="card-title">Project Show</h5> -->
+            <p class="card-text text-justify row">
+                <img src="{% static 'images/project_show_1.jpg' %}"
+                    class="img-thumbnail rounded float-left c_responsive col" alt="...">
+                <img src="{% static 'images/project_show_2.jpg' %}"
+                    class="img-thumbnail rounded float-right c_responsive col" alt="...">
             </p>
         </div>
+        <div class="card-footer text-muted">
+            <span>Project Show </span>&nbsp;
+            <a href="#">
+                More info
+            </a>&nbsp;
+        </div>
     </div>
+
+    <div class="card" style="margin-top:3%">
+        <div class="card-body">
+            <!-- <h5 class="card-title">Project Show</h5> -->
+            <p class="card-text text-justify row">
+                <img src="{% static 'images/major_donations_3.jpg' %}"
+                    class="img-thumbnail rounded float-left c_responsive col" alt="...">
+                <img src="{% static 'images/major_donations_2.jpg' %}"
+                    class="img-thumbnail rounded float-right c_responsive col" alt="...">
+                <img src="{% static 'images/major_donations_1.jpg' %}"
+                    class="img-thumbnail rounded float-right c_responsive col" alt="...">
+            </p>
+        </div>
+        <div class="card-footer text-muted">
+            <span>Major Donations</span>&nbsp;
+            <a href="#">
+                More info
+            </a>&nbsp;
+        </div>
+    </div>
+
+    <div class="card" style="margin-top:3%">
+        <div class="card-body">
+            <!-- <h5 class="card-title">Project Show</h5> -->
+            <p class="card-text text-justify row">
+                <img src="{% static 'images/fresher_welcome_1.jpg' %}"
+                    class="img-thumbnail rounded float-left c_responsive col" alt="...">
+                <img src="{% static 'images/fresher_welcome_2.jpg' %}"
+                    class="img-thumbnail rounded float-right c_responsive col" alt="...">
+            </p>
+        </div>
+        <div class="card-footer text-muted">
+            <span>Fresher Welcome</span>&nbsp;
+            <a href="#">
+                More info
+            </a>&nbsp;
+        </div>
+    </div>
+
+
+    <div class="card" style="margin-top:3%">
+        <div class="card-body">
+            <!-- <h5 class="card-title">Project Show</h5> -->
+            <p class="card-text text-justify row">
+                <img src="{% static 'images/football_match_3.jpg' %}"
+                    class="img-thumbnail rounded float-left c_responsive col" alt="...">
+                <img src="{% static 'images/football_match_2.jpg' %}"
+                    class="img-thumbnail rounded float-right c_responsive col" alt="...">
+                    <img src="{% static 'images/football_match_1.jpg' %}"
+                    class="img-thumbnail rounded float-right c_responsive col" alt="...">
+            </p>
+        </div>
+        <div class="card-footer text-muted">
+            <span>Football Match</span>&nbsp;
+            <a href="#">
+                More info
+            </a>&nbsp;
+        </div>
+    </div>
+
+
 </div>
 
-<div class='text-center sticky-bottom' style="margin-top: 5%;">
+
+
+
+
+
+
+
+<div class='text-center sticky-bottom' style="margin-top: 5%; margin-bottom:3%" >
     <a class="btn btn-primary btn-sm" href="/">Back to Home</a>
 </div>
+
 
 {%endblock%}
