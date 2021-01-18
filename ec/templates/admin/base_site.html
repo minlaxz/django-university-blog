@@ -1,0 +1,31 @@
+{% extends "admin/base.html" %}
+
+{% block title %}
+{% if subtitle %}
+{{ subtitle }} |
+{% endif %}
+{{ title }} |
+EC Family
+{% endblock %}
+
+{% block branding %}
+<h1 id="site-name"><a href="{% url 'admin:index' %}">EC Blog Administration&nbsp;| </a>
+    <a href="/" style="color:brown; text-decoration: underline;">Back Home</a>
+</h1>
+
+{% endblock %}
+
+{% block nav-global %} {% endblock %}
+
+{% block bodyheader %}
+<!-- <div class="row">
+    <nav class="navbar navbar-dark py-0 bg-primary navbar-expand-lg py-md-0">
+        <a class="navbar-brand" href="/#" style="margin-left: 2%; font-weight:bold;"> TTU EC Family (Only for Admins)</a>
+    </nav>
+</div> -->
+{% endblock %}
+{% block bodyfooter %}
+<!-- <div class="text-center">
+    <button class='btn btn-outline-warning' onclick="window.location.href='/'" > Back Home </button>
+</div> -->
+{% endblock %}
